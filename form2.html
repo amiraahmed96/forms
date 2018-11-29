@@ -1,0 +1,87 @@
+<html>
+    <head>
+         <style>
+             body
+             {
+                 background-color: darkslateblue;
+                 margin: 0px;
+                 padding: 0px;
+             }
+             .login
+             {
+                 width: 350px;
+                 min-height: 200px;
+                 margin: 70px auto;
+                 background-color: black;
+                 color: white;
+                 position: relative;
+             }
+             .login label
+             {
+                 min-width: 100px;
+                 height: 50px;
+                 display: inline-block;
+             }
+             .login input
+             {
+                 width: 200px;
+                 height: 30px;
+                 border-radius: 10px;
+                 
+             }
+             .login .active
+             {
+                 background-color: gray;
+                 padding: 20px;
+             }
+             .login .signin
+             {
+                 position: absolute;
+             }
+             .login .signup
+             {
+                 display: none;
+                 position: absolute;
+             }
+             .login span
+             {
+                 display: inline-block;
+                 margin: 0px;
+             }
+             .login .tosignin
+             {
+                 padding: 10px;
+                 background-color: gray;
+                 
+             }
+        </style>
+    </head>
+    <body>
+        <div class="login">
+            <span class="tosignin">Login</span>
+            <span class="tosignup">Regester</span>
+            <div class="signin active">
+                <form>
+                    <label>username</label>
+                    <input type="text" placeholder="enter your username"><br>
+                    <label>password</label>
+                    <input type="password" placeholder="enter your password"><br>
+                    <input type="submit" value="login">
+                </form>
+            </div>
+            <div class="signup">
+                <form>
+                    <label>username</label>
+                    <input type="text" placeholder="enter your username"><br>
+                    <label>E-mail</label>
+                    <input type="email" placeholder="enter your email"><br>
+                    <label>password</label>
+                    <input type="password" placeholder="enter your password"><br>
+                    <label>confairm password</label>
+                    <input type="password" placeholder="confairm password"><br>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
